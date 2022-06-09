@@ -1,0 +1,116 @@
+.image {
+	width: 100%;
+}
+
+img{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.figure {
+	padding: 0;
+	width: 100%;
+	border-top: 2px solid #ffe600;
+}
+
+h3 {
+	color: #94acb3;
+	font-size: 16px;
+	display: block;
+	margin: 0;
+	padding: 0 0 12px;
+	text-transform: capitalize;
+	margin-top: 12px;
+}
+
+.article {
+	margin: 0;
+	padding: 0;
+	margin-right: 20px;
+}
+
+.article p {
+	color: #767676;
+	margin: 0;
+	padding: 20px 0 10px;
+	text-align: justify;
+}
+.article p.turun {
+	margin-left: 12px;
+}
+
+.t1, .t2 {
+	line-height: 20px;
+}
+
+.container-profil {
+	width: 100%;
+	margin-top: 20px;
+	padding: 18px;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding: 0;
+	width: 100%;
+	
+	margin-right: 20px;
+}
+
+.container-profil div {
+	border-top: 2px solid #ffe600;
+}
+
+p {
+	color: #767676;
+	margin: 0;
+	padding: 10px;
+	text-align: justify;
+}
+
+.p1 {
+	margin-left: 20px;
+}
+
+.head {
+	font-weight: bold;
+}
+
+
+.k1 {
+	line-height: 18px;
+	padding-right: 10px;
+}
+#fotok {
+	width: 200px;
+	height: 200px;
+}
+
+.nip {
+	line-height: 20px;
+}
+
+.profil {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-around;
+}
+
+.table1 {
+	padding-top: 50px;
+	display: flex;
+	align-items: center;
+}
+
+.pla {
+	border-top: 0px solid #fff;
+}
+
+caption {
+	margin-bottom: 10px;
+}
+
+footer {
+	width: 100%;
+	height: 40px;
+
+}
