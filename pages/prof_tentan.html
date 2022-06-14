@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Puskesmas Karang Intan 2</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+   integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+   crossorigin=""/>
+</head>
+<body>
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="../index.html">Puskesmas Karang Intan 2</a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+	      <ul class="navbar-nav me-auto mb-2 mb-lg-0 right">
+	        <li class="nav-item">
+	          <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+	        </li>
+	        <li class="nav-item dropdown">
+	          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+	            Layanan
+	          </a>
+	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+	            <li><a class="dropdown-item" href="jenis_p.html">Jenis Pelayanan</a></li>
+	            <li><a class="dropdown-item" href="jadwal_p.html">Jadwal Pelayanan</a></li>
+	            <li><a class="dropdown-item" href="persyaratan_p.html">Persyaratan Pelayanan</a></li>
+	            <li><a class="dropdown-item" href="mekanisme_p.html">Sistem, Mekanisme dan Prosedur Pasien</a></li>
+	            <li><a class="dropdown-item" href="rawat_p.html">Rawat Inap</a></li>
+	          </ul>
+	        </li>
+	        <li class="nav-item dropdown">
+	          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+	            Profil
+	          </a>
+	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+	          	<li><a class="dropdown-item" href="prof_vmmt.html">Visi, Misi, Motto & Tata Nilai</a></li>
+	          	<li><a class="dropdown-item" href="prof_kepala.html">Kepala Puskesmas</a></li>
+	          	<li><a class="dropdown-item active" href="#">Tentang Kami</a></li>
+	          </ul>
+	        </li>
+	         <li class="nav-item dropdown">
+	          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+	            Inovasi
+	          </a>
+	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+	           <li><a class="dropdown-item" href="ino_geprek.html">GEPREK</a></li>
+	            <li><a class="dropdown-item" href="kunjungan_bakr.html">Kunjungan Bumil, Anemia, Kek & Resti</a></li>
+	             <li><a class="dropdown-item" href="pelaksanaan_kbumi.html">Pelaksanaan Kelas Ibu Hamil</a></li>
+	             <li><a class="dropdown-item" href="pemberian_pmt.html">Pemberian PMT</a></li>
+	             <li><a class="dropdown-item" href="kerjasama.html">Inovasi Kerjasama</a></li>
+	          </ul>
+	        </li>
+	         <li class="nav-item">
+	          <a class="nav-link" aria-current="page" href="pengaduan.html">Pengaduan Masyarakat</a>
+	        </li>
+	         <li class="nav-item">
+	          <a class="nav-link" aria-current="page" href="hubungi.html">Hubungi</a>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+	<!-- Navbar -->
+
+	<!-- isi -->
+	<div class="container bg-light shadow p-3 mb-5 bg-body rounded" style="margin-top: 29px;padding-left: 30px;">
+		<h3 style="text-decoration: underline;margin-bottom: 10px;">TENTANG KAMI</h3>
+		<div id="map" style="height: 300px;margin-bottom: 30px;"></div>
+		<p class='head'>1. Keadaan Geografi</p>
+		<p class='k1'><span class='p1'></span>Kecamatan Karang Intan dengan ibukotanya Karang Intan berjarak + 12 km  dari ibukota Kabupaten Banjar (Martapura) dan dari ibukota Propinsi Kapmantan Selatan (Banjarmasin) jaraknya + 52 km. Kecamatan Karang Intan memipki 2 buah Puskesmas yaitu UPT Puskesmas Karang Intan 1 dan UPT Puskesmas Karang Intan 2. Luas wilayah kerja UPT Puskesmas Karang Intan 2 + 132,96 km², terdiri dari 13 desa dengan batas wilayah kerja sebagai berikut :</p>
+		<p>a. Sebelah Utara : berbatasan dengan Kecamatan Pengaron</p>
+		<p>b. Sebelah Timur : berbatasan dengan Kecamatan Aranio.</p>
+		<p>c. Sebelah Selatan : berbatasan dengan Kecamatan Bati-Bati.</p>
+		<p>d. Sebelah Barat	: berbatasan dengan Kecamatan Mataraman</p>
+		<p class='k1'><span class='p1'></span>Keadaan geografis wilayah kerja UPT Puskesmas Karang Intan 2 berupa pegunungan, hutan, perkebunan karet dan pemukiman. Jarak desa terdekat 0 km   ( Desa Sungai Alang ) dan terjauh 20 km ( Desa Kiram ). Di samping itu 3 ( tiga ) buah desa di wilayah kerja UPT Puskesmas Karang Intan 2 merupakan Daerah Apran Sungai ( DAS ). </p>
+		<p class='head'>1. Wilayah Kerja Puskesmas</p>
+		<p class='k1'><span class='p1'></span>UPT Puskesmas Karang Intan 2 berada di Sungai Alang RT.03 Kecamatan Karang Intan Kabupaten Banjar Propinsi Kapmantan Selatan.</p>
+		<p>Desa-desa yang menjadi wilayah kerja UPT Puskesmas Karang Intan 2  adalah:</p>
+				
+		<p><span class='p1'></span>1. Sungai Alang</p>
+		<p><span class='p1'></span>2. Sungai Landas</p>
+		<p><span class='p1'></span>3. Sungai Asam</p>
+		<p><span class='p1'></span>4. Mandikapau Barat</p>
+		<p><span class='p1'></span>5. Mandikapau Timur</p>
+		<p><span class='p1'></span>6. Abirau</p>
+		<p><span class='p1'></span>7. Pulau Nyiur</p>
+		<p><span class='p1'></span>8. Mandiangin Barat</p>
+		<p ><span class='p1'></span>9. Mandiangin Timur</p>
+		<p><span class='p1'></span>10. Kiram</p>
+		<p><span class='p1'></span>11. Awang Bangkal Barat</p>
+		<p><span class='p1'></span>12. Awang Bangkal Timur</p>
+				
+		<p class='k1'> <span class='p1'></span>Wilayah kerja UPT Puskesmas Karang Intan 2 dapat ditempuh dengan jalan darat, baik dengan kendaraan roda empat maupun roda dua. </p>
+	</div>
+	<!-- isi -->
+	
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+   integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+   crossorigin=""></script>
+ <script>
+ 	var map = L.map('map').setView([-3.4598995, 114.9495093], 14);
+ 	L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 20,
+    attribution: '© OpenStreetMap'
+}).addTo(map);
+ 	var marker = L.marker([-3.4598995, 114.9495093]).addTo(map);
+ </script>
+</body>
+</html>
